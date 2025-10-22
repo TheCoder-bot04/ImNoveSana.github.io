@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="skill-page">
+    <nav id="navbar">
+        <div id="left-logo">
+            <h3>NovaSana</h3>
+        </div>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="right-nav">
+            <ul id="nav-links" class="show">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Skills</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="head">
+        <h1>My Skills</h1>
+        <p>I can help you in these areas</p>
+    </div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="box1">
+                <h1 class="html">Html,CSS</h1>
+                <img class="img1" src="img/html,css .new.png" alt="HTML,CSS">
+                <p class="para1">HTML defines the structure of web pages, while CSS styles them beautifully.</p>
+            </div>
+            <div class="box1">
+                <h1 class="Responsive">Responsive Design</h1>
+                <img class="img2" src="img/responsive-removebg-preview .new.png" alt="Responsive Design">
+                <p class="para2">Responsive layouts that adapt seamlessly across devices for optimal user experience and
+                    accessibility.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box2">
+                <h1 class="Backend">Backend</h1>
+                <img class="img3" src="img/3-removebg-preview .new.png" alt="Backend">
+                <p class="para3">Handles server-side logic, database operations, API integration, and secure data
+                    processing efficiently.</p>
+            </div>
+            <div class="box2">
+                <h1 class="node">Node JS</h1>
+                <img class="img4" src="img/2-removebg-preview .new.png" alt="Node JS">
+                <p class="para4">Node.js enables fast, scalable backend development using JavaScript and event-driven
+                    architecture.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+            hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+        });
+    });
+</script>
+
+</html>
