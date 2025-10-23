@@ -30,7 +30,7 @@
 }
 
 body.home-page {
-    background-image: url(img/img.new.webp);
+    background-image: url(/img/img.new.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -854,3 +854,4 @@ body.skill-page {
     }
 
 }
+
