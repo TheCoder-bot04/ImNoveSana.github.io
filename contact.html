@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+    <nav id="navbar">
+        <div id="left-logo">
+            <h3>NovaSana</h3>
+        </div>
+        <div id="right-nav">
+            <ul id="nav-links" class="show">
+        <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Skills</a></li>
+<li><a href="contact.html">Hire Me</a></li>
+
+            </ul>
+        </div>
+        <div id="hamburger">☰</div>
+    </nav>
+    <form class="contact-form" action="https://formspree.io/f/xgvnpkdw" method="post">
+        <h2>Hire Me Now</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+<script src="index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+            hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+        });
+    });
+</script>
+
+</html>

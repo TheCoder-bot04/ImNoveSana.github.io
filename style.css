@@ -1,0 +1,806 @@
+/* home.CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-page,
+.skill-page,
+.contact-page,
+.project-page {
+    animation: backgroundPulse 8s infinite alternate;
+}
+
+body.home-page {
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1.5;
+    z-index: -2;
+    width: 98vw;
+    height: 97vh;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#navbar{
+    background-color: black;
+    color: white;
+    height: 64px;
+        width: 102%;
+    border-radius: 0px 0px 37px 37px;
+}
+.about-page #navbar,
+.skill-page #navbar,
+.contact-page #navbar,
+.project-page #navbar {
+  width: 100%;
+}
+
+#navbar h3 {
+    position: absolute;
+    top: 27px;
+    left: 38px;
+    font-family: cursive;
+}
+
+#right-nav ul {
+    align-items: center;
+    margin: -11px 1px;
+    position: absolute;
+    right: 30px;
+    color: white;
+}
+
+#right-nav ul li {
+    margin: -20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 17px;
+    color: white;
+    font-size: 21px;
+    list-style: none;
+    font-family: cursive;
+}
+
+#right-nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+#right-nav li a:hover {
+    color: rgb(78, 73, 73);
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#first-sect .about {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    padding: 14px 12px;
+    position: absolute;
+    left: 35%;
+    top: 43%;
+    min-height: 100vh;
+}
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* About.CSS */
+body.about-page {
+    background-image: none;
+    /* background-color: rgb(241, 233, 233); */
+}
+
+#about-me {
+    color: black;
+    background-image: none;
+}
+
+#about-me h1 {
+    position: absolute;
+    font-weight: bold;
+    top: 147px;
+    left: 210px;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: cursive;
+}
+
+#about-me .para {
+    width: 545px;
+    top: 277px;
+    left: 104px;
+    flex-direction: column;
+    font-size: 19px;
+    position: absolute;
+    line-height: 1.6;
+}
+
+#btn {
+    font-family: cursive;
+    padding: 6px;
+    border-radius: 7px;
+    font-size: 17px;
+    left: 246px;
+    position: absolute;
+    border: 2px solid black;
+    top: 528px;
+    color: white;
+    background-color: #000000;
+}
+
+#btn a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+#btn:hover  {
+    font-size: 18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#btn:hover a {
+
+    background-color: white;
+    color: #000000;
+}
+
+.blue {
+    font-weight: bold;
+    color: #503737;
+}
+
+#about-me img {
+    height: 40vh;
+    width: 40vw;
+    left: 831px;
+    top: 252px;
+    height: 35vh;
+    position: absolute;
+    width: 30vw;
+}
+
+/* Services.CSS */
+body.skill-page {
+    background-image: none;
+}
+
+.head h1 {
+    position: absolute;
+    top: 95px;
+    left: 44%;
+    color: black;
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    width: 309px;
+    height: 198px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: 138px;
+    position: relative;
+}
+
+.box2 {
+    width: 309px;
+    height: 198px;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.head p {
+    position: absolute;
+    top: 146px;
+    left: 40%;
+    color: black;
+    font-size: 27px;
+}
+
+.box1 .html {
+    position: absolute;
+    top: 31px;
+    left: 99px;
+    color: black;
+    font-size: 26px;
+}
+
+.box1 .Responsive {
+    position: absolute;
+    top: 31px;
+    left: 82px;
+    color: black;
+    font-size: 26px;
+}
+
+.box2 .Backend {
+    position: absolute;
+    top: 33px;
+    left: 85px;
+    color: black;
+    font-size: 26px;
+}
+
+.box2 .node {
+    position: absolute;
+    top: 29px;
+    left: 99px;
+    color: black;
+    font-size: 26px;
+}
+
+.box1 .para1 {
+    font-size: 17px;
+    color: black;
+    margin-top: 62px;
+    margin-left: -15px;
+    line-height: 1.5;
+}
+
+.box1 .para2 {
+    font-size: 17px;
+    color: black;
+    margin-top: 62px;
+    margin-left: -15px;
+    line-height: 1.5;
+}
+
+.box2 .para3 {
+    font-size: 17px;
+    color: black;
+    margin-top: 62px;
+    margin-left: -15px;
+    line-height: 1.5;
+}
+
+.box2 .para4 {
+    font-size: 17px;
+    color: black;
+    margin-top: 62px;
+    margin-left: -15px;
+    line-height: 1.5;
+}
+
+.box1 .img1 {
+    left: 25px;
+    top: -50px;
+    height: 30%;
+    width: 24%;
+    position: relative;
+    filter: brightness(0%);
+}
+
+.box1 .img2 {
+    left: 12px;
+    top: -50px;
+    height: 30%;
+    width: 24%;
+    position: relative;
+    filter: brightness(0%);
+}
+
+.box2 .img3 {
+    left: 25px;
+    top: -50px;
+    height: 30%;
+    width: 24%;
+    position: relative;
+    filter: brightness(0%);
+}
+
+.box2 .img4 {
+    left: 12px;
+    top: -50px;
+    height: 30%;
+    width: 24%;
+    position: relative;
+    filter: brightness(0%);
+}
+
+/* Projects.CSS */
+.box-pro {
+    width: 309px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+#one {
+        background-color: teal;
+        color: white;
+}
+#two {
+        background-color: purple;
+        color: white;
+}
+#three {
+        background-color: black;
+        color: white;
+}
+.box-pro img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.view-btn {
+    padding: 8px 16px;
+    /* background-color: #bf3ce7;
+    color: white; */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+#overlay img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+#close-btn {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.project-text {
+    font-size: 14px;
+    margin-top: 26px;
+    margin-left: 2px;
+    line-height: 2;
+}
+
+.color {
+    font-weight: bold;
+}
+
+/* Contact CSS */
+.heading h1 {
+    position: absolute;
+    top: 128px;
+    left: 44%;
+    color: black;
+    font-size: 34px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+ background-color: #161516;
+    color: white;
+}
+
+/* Media Queries for Contact section/........ */
+@media (max-width: 375px) {
+    #navbar {
+        height: 55px;
+    }
+
+    .contact-form {
+        margin: 40px 11px;
+    }
+}
+
+@media (max-width: 570px) {
+    .contact-form {
+        margin: 40px 11px;
+    }
+}
+
+/* Media Queries for Skills section/........ */
+@media (max-width :977px) {
+    .skill-page .head h1 {
+        left: 40%;
+    }
+
+    .skill-page .head p {
+        left: 35%;
+    }
+}
+
+@media (max-width :830px) {
+    .skill-page .head h1 {
+        left: 40%;
+    }
+
+    .skill-page .row {
+        gap: 26px;
+    }
+
+    #navbar ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width :651px) {
+    .skill-page .head h1 {
+        left: 37%;
+    }
+
+    .skill-page .head p {
+        left: 29%;
+    }
+
+    .skill-page .box1:nth-child(2) {
+        margin-top: 38px;
+    }
+
+    .skill-page .box2:nth-child(1),
+    .skill-page .box2:nth-child(2) {
+        margin-top: 38px;
+    }
+}
+
+@media (max-width :520px) {
+    .skill-page .head h1 {
+        left: 33%;
+    }
+
+    .skill-page .head p {
+        left: 23%;
+    }
+}
+
+@media (max-width :448px) {
+    .skill-page .head p {
+        left: 13%;
+    }
+
+    .skill-page .head h1 {
+        left: 32%;
+    }
+}
+
+@media (max-width :374px) {
+    .skill-page .head p {
+        left: 6%;
+    }
+
+    .skill-page .head h1 {
+        left: 23%;
+    }
+}
+
+@media (max-width :339px) {
+    .skill-page .head p {
+        top: 136px;
+    }
+
+    .skill-page .head h1 {
+        top: 92px;
+    }
+}
+
+/* Media Queries for Projects section */
+@media (max-width :1127px) {
+    .project-page .head h1 {
+        left: 40%;
+    }
+
+    .project-page .box-pro:nth-child(3) {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width :747px) {
+    .project-page .head h1 {
+        left: 37%;
+    }
+
+    .project-page .box-pro:nth-child(3),
+    .project-page .box-pro:nth-child(2) {
+        margin-top: -28px;
+    }
+}
+
+@media (max-width :924px) {
+    #navbar ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width :520px) {
+    .project-page .head h1 {
+        left: 33%;
+    }
+}
+
+@media (max-width :448px) {
+    .project-page .head h1 {
+        left: 25%;
+    }
+
+    .project-page .head h1 {
+        margin-top: 33px;
+    }
+}
+
+@media (max-width :374px) {
+    .project-page .head h1 {
+        left: 23%;
+    }
+
+    .project-page .box-pro {
+        width: 270px;
+    }
+}
+
+@media (max-width :339px) {
+    .project-page .head h1 {
+        top: 92px;
+    }
+}
+
+/* Media Queries for About section */
+@media (max-width: 1205px) {
+    .about-page #about-me img {
+        left: 593px;
+        top: 182px;
+    }
+
+    .about-page #about-me .para {
+        left: 64px;
+    }
+
+    .about-page #btn {
+        top: 572px;
+    }
+}
+
+@media (max-width: 848px) {
+    .about-page #about-me img {
+        left: 588px;
+        top: 264px;
+        height: 22vh;
+        width: 23vw;
+    }
+
+    .about-page #about-me h1 {
+        left: 128px;
+    }
+
+    .about-page #btn {
+        left: 163px;
+        top: 578px;
+    }
+
+    .about-page #about-me .para {
+        left: 31px;
+    }
+}
+
+@media (max-width: 764px) {
+    .about-page #about-me img {
+        display: none;
+    }
+
+    .about-page #about-me h1 {
+        left: 285px;
+    }
+
+    .about-page #about-me .para {
+        width: 555px;
+        left: 150px;
+    }
+
+    .about-page #btn {
+        left: 300px;
+        top: 591px;
+    }
+}
+
+@media (max-width: 704px) {
+    .about-page #about-me .para {
+        left: 32px;
+        font-size: 16px;
+    }
+
+    .about-page #btn {
+        left: 180px;
+        top: 536px;
+    }
+
+    .about-page #about-me h1 {
+        left: 74px;
+    }
+}
+
+@media (max-width: 604px) {
+    .about-page #about-me .para {
+        width: 303px;
+    }
+
+    .about-page #btn {
+        left: 74px;
+        top: 663px;
+    }
+
+    .about-page #about-me h1 {
+        left: 74px;
+    }
+}
+
+@media (max-width: 340px) {
+    .about-page #about-me .para {
+        width: 250px;
+        margin-top: -70px;
+    }
+
+    .about-page #about-me h1 {
+        left: 66px;
+        margin: -32px 0px;
+    }
+
+    .about-page #btn {
+        left: 66px;
+        top: 705px;
+    }
+}
+/*  Navbar Mobile view */
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 100%;
+        width: 35%;
+        padding: 10px;
+    }
+
+    #right-nav ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #navbar ul li a {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}

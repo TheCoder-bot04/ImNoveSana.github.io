@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+    <nav id="navbar">
+        <div id="left-logo">
+            <h3>NovaSana</h3>
+        </div>
+        <div id="hamburger">☰</div>
+        <div id="right-nav">
+            <ul id="nav-links" class="show">
+
+         <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Skills</a></li>
+<li><a href="contact.html">Hire Me</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <section id="about-me">
+        <h1>About Me</h1>
+        <img src="img/about-new.png" alt="Loading Image">
+        <div class="para">
+            <div>Hi! I'm <b>Sana-a self-taught</b> web developer .</div>
+            <div>Over a past few months I've been in an exciting journey of learning</div>
+            <div> <span class="blue">HTML, CSS, JavaScript, Node JS, MongoDB, Express and more.</span></div>
+            <div><b>I started with a simple goal:</b>to built useful,responsible websites</div>
+            <div> from scratch and to keep growing my skills every single day.</div>
+            <div>I enjoy turning ideas into clean and functional web experiences,</div>
+            <div>So far I've built projects like Gym WebSite, To-Do App and this Portfolio.</div>
+        </div>
+    </section>
+    <button id="btn"><a href="projects.html">View Projects</a></button>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+            hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+        });
+    });
+</script>
+
+</html>

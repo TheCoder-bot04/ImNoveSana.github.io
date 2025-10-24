@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio site</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+  <nav id="navbar">
+    <div id="left-logo">
+      <h3>NovaSana</h3>
+    </div>
+    <div id="hamburger">☰</div>
+    <div id="right-nav">
+      <ul id="nav-links" class="show">
+        <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="services.html">Skills</a></li>
+<li><a href="contact.html">Hire Me</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- <section id="first-sect">
+    <div class="about">
+      Hi! My name is Sana
+      <div>and I can make responsive </div>
+      <div> websites using</div>
+      <span id="element"></span>
+    </div>
+  </section> -->
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#element', {
+    strings: [' HTML', ' CSS', ' &amp;JavaScript.'],
+    typeSpeed: 60,
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    hamburger.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+      hamburger.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+    });
+  });
+</script>
+</body>
+
+</html>
