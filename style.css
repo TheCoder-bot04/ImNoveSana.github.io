@@ -373,14 +373,30 @@ body.skill-page {
         background-color: teal;
         color: white;
 }
+#one:hover{
+        background-color: white;
+        color: teal;
+    border:2px solid teal;
+    border-radius:4px;
+}
 #two {
         background-color: purple;
         color: white;
 }
+#two:hover{
+        background-color: white;
+        color: purple;
+    border:2px solid purple;
+    border-radius:4px;
 #three {
         background-color: black;
         color: white;
 }
+    #threee:hover{
+        background-color: white;
+        color: black;
+    border:2px solid black;
+    border-radius:4px;
 .box-pro img {
     width: 100%;
     height: auto;
@@ -809,4 +825,5 @@ body.skill-page {
     }
 
 }
+
 
