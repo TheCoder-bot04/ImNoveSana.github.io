@@ -4,8 +4,15 @@
     padding: 0;
 }
 
+.about-page,
+.skill-page,
+.contact-page,
+.project-page {
+    animation: backgroundPulse 8s infinite alternate;
+}
+
 body.home-page {
-    background-image: url(img/1.jpg);
+    background-image: url(../img/1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -366,31 +373,13 @@ body.skill-page {
         background-color: teal;
         color: white;
 }
-#one:hover {
-        background-color: white;
-        color: teal;
-    border:2px solid teal;
-     border-radius:4px;
-}
 #two {
         background-color: purple;
         color: white;
 }
-#two:hover{
-        background-color:white;
-        color: purple;
-      border:2px solid purple;
-    border-radius:4px;
-}
 #three {
         background-color: black;
         color: white;
-}
-#three:hover {
-        background-color: white;
-        color: black;
-      border:2px solid black;
-     border-radius:4px;
 }
 .box-pro img {
     width: 100%;
@@ -679,7 +668,8 @@ body.skill-page {
     }
 
     .about-page #btn {
-        top: 572px;
+                top: 520px;
+
     }
 }
 
@@ -693,15 +683,17 @@ body.skill-page {
 
     .about-page #about-me h1 {
         left: 128px;
+            top: 86px;
     }
 
     .about-page #btn {
         left: 163px;
-        top: 578px;
+        top: 485px;
     }
 
     .about-page #about-me .para {
         left: 31px;
+        top: 220px;
     }
 }
 
@@ -717,11 +709,12 @@ body.skill-page {
     .about-page #about-me .para {
         width: 555px;
         left: 150px;
+        
     }
 
     .about-page #btn {
         left: 300px;
-        top: 591px;
+                top: 499px;
     }
 }
 
@@ -733,7 +726,7 @@ body.skill-page {
 
     .about-page #btn {
         left: 180px;
-        top: 536px;
+       top: 452px;
     }
 
     .about-page #about-me h1 {
@@ -747,8 +740,8 @@ body.skill-page {
     }
 
     .about-page #btn {
-        left: 74px;
-        top: 663px;
+               left: 86px;
+        top: 583px;
     }
 
     .about-page #about-me h1 {
@@ -814,11 +807,4 @@ body.skill-page {
     #hamburger {
         display: block;
     }
-
 }
-
-
-
-
-
-
