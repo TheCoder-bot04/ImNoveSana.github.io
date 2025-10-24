@@ -4,15 +4,8 @@
     padding: 0;
 }
 
-.about-page,
-.skill-page,
-.contact-page,
-.project-page {
-    animation: backgroundPulse 8s infinite alternate;
-}
-
 body.home-page {
-    background-image: url(/img/1.jpg);
+    background-image: url(img/1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -373,13 +366,25 @@ body.skill-page {
         background-color: teal;
         color: white;
 }
+#one:hover {
+        background-color: white;
+        color: teal;
+}
 #two {
         background-color: purple;
         color: white;
 }
+#two:hover{
+        background-color:white;
+        color: purple;
+}
 #three {
         background-color: black;
         color: white;
+}
+#three:hover {
+        background-color: white;
+        color: black;
 }
 .box-pro img {
     width: 100%;
@@ -805,3 +810,4 @@ body.skill-page {
     }
 
 }
+
